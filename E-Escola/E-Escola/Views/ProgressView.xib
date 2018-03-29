@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProgressView" customModule="FakeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUo-z2-for">
+                    <rect key="frame" x="112.5" y="267.5" width="150" height="133"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="A4p-KU-ve1">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="133"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-L1-2aY">
+                                <rect key="frame" x="56.5" y="48" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carregando..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJY-VD-mR6">
+                                <rect key="frame" x="22" y="101" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FtH-L1-2aY" firstAttribute="centerY" secondItem="A4p-KU-ve1" secondAttribute="centerY" id="MXE-ML-JI2"/>
+                            <constraint firstItem="FtH-L1-2aY" firstAttribute="centerX" secondItem="A4p-KU-ve1" secondAttribute="centerX" id="Nft-4P-nL8"/>
+                            <constraint firstItem="zJY-VD-mR6" firstAttribute="centerX" secondItem="A4p-KU-ve1" secondAttribute="centerX" id="cSv-Kd-Hmt"/>
+                            <constraint firstItem="zJY-VD-mR6" firstAttribute="top" secondItem="FtH-L1-2aY" secondAttribute="bottom" constant="16" id="fTF-bD-jbb"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="7wd-EP-F8G"/>
+                        <constraint firstAttribute="width" secondItem="HUo-z2-for" secondAttribute="height" multiplier="9:8" id="see-Mh-PSt"/>
+                    </constraints>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HUo-z2-for" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="izE-L2-xhb"/>
+                <constraint firstItem="HUo-z2-for" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y0Y-6d-G0q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityIndicator" destination="FtH-L1-2aY" id="dwE-r4-uHn"/>
+                <outlet property="effect" destination="HUo-z2-for" id="7Se-YC-Yw3"/>
+                <outlet property="label" destination="zJY-VD-mR6" id="eMA-fu-7X7"/>
+            </connections>
+            <point key="canvasLocation" x="-162" y="14"/>
+        </view>
+    </objects>
+</document>

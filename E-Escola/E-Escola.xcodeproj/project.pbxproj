@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF1AA9F81FFC497B005B9796 /* Notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1AA9F71FFC497B005B9796 /* Notificacao.swift */; };
+		DF4CFD6E1FE88E7D0015657E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4CFD6D1FE88E7D0015657E /* AppDelegate.swift */; };
+		DF4CFD731FE88E7D0015657E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF4CFD711FE88E7D0015657E /* Main.storyboard */; };
+		DF4CFD761FE88E7D0015657E /* E_Escola.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF4CFD741FE88E7D0015657E /* E_Escola.xcdatamodeld */; };
+		DF4CFD781FE88E7D0015657E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4CFD771FE88E7D0015657E /* Assets.xcassets */; };
+		DF4CFD7B1FE88E7D0015657E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF4CFD791FE88E7D0015657E /* LaunchScreen.storyboard */; };
+		DF7E5AB81FF2EF7A0085FA17 /* Vertrina.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E5AB61FF2EF790085FA17 /* Vertrina.swift */; };
+		DF7E5AB91FF2EF7A0085FA17 /* Vertrina_CB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF7E5AB71FF2EF7A0085FA17 /* Vertrina_CB.ttf */; };
+		DF7E5ABB1FF2F8B20085FA17 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E5ABA1FF2F8B20085FA17 /* Color.swift */; };
+		DF7E5ABD1FF30C480085FA17 /* DetalharEscolaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E5ABC1FF30C480085FA17 /* DetalharEscolaViewController.swift */; };
+		DF7E5AC01FF323BA0085FA17 /* FATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E5ABE1FF323B90085FA17 /* FATextField.swift */; };
+		DF7E5AC11FF323BA0085FA17 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E5ABF1FF323BA0085FA17 /* CardView.swift */; };
+		DF8C8B281FE9DCB800621BA3 /* CustomizacaoAPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8B271FE9DCB800621BA3 /* CustomizacaoAPP.swift */; };
+		DF8C8B2A1FE9E5C500621BA3 /* EscolasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8B291FE9E5C500621BA3 /* EscolasTableViewController.swift */; };
+		DF8C8B2D1FE9EAC500621BA3 /* JsonPlaceHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C8B2C1FE9EAC500621BA3 /* JsonPlaceHolderModel.swift */; };
+		DFAA29171FEF086E00A0FEC3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA29161FEF086E00A0FEC3 /* API.swift */; };
+		DFAA29191FEF08DC00A0FEC3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA29181FEF08DC00A0FEC3 /* Reachability.swift */; };
+		DFAA291C1FEF0BD300A0FEC3 /* Alertas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA291B1FEF0BD300A0FEC3 /* Alertas.swift */; };
+		DFAA291E1FEF0C1C00A0FEC3 /* CoreDataErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA291D1FEF0C1C00A0FEC3 /* CoreDataErrors.swift */; };
+		DFAA29221FEF1EF900A0FEC3 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFAA29201FEF1EF900A0FEC3 /* ProgressView.xib */; };
+		DFAA29231FEF1EF900A0FEC3 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA29211FEF1EF900A0FEC3 /* ProgressView.swift */; };
+		DFAADF4F2006D7B000F74909 /* LocalizacaoDispositivoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAADF4E2006D7B000F74909 /* LocalizacaoDispositivoService.swift */; };
+		DFAADF522006D7EE00F74909 /* EscolaNuvemTcuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAADF512006D7EE00F74909 /* EscolaNuvemTcuService.swift */; };
+		DFAADF542006D80B00F74909 /* EscolaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAADF532006D80B00F74909 /* EscolaService.swift */; };
+		DFAADF562006D85600F74909 /* LocalizacaoDispotivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAADF552006D85600F74909 /* LocalizacaoDispotivo.swift */; };
+		DFAADF582006D87700F74909 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAADF572006D87700F74909 /* Endereco.swift */; };
+		DFAADF5A2006D89000F74909 /* Municipio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAADF592006D89000F74909 /* Municipio.swift */; };
+		DFAADF5C2006D8AA00F74909 /* Geolocalizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAADF5B2006D8AA00F74909 /* Geolocalizacao.swift */; };
+		DFAADF5E2006D8C500F74909 /* Escola.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAADF5D2006D8C500F74909 /* Escola.swift */; };
+		DFB17B6F1FF9A41D0061E03B /* EscolaMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB17B6E1FF9A41D0061E03B /* EscolaMapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF1AA9F71FFC497B005B9796 /* Notificacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacao.swift; sourceTree = "<group>"; };
+		DF4CFD6A1FE88E7D0015657E /* E-Escola.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Escola.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4CFD6D1FE88E7D0015657E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF4CFD721FE88E7D0015657E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF4CFD751FE88E7D0015657E /* E_Escola.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = E_Escola.xcdatamodel; sourceTree = "<group>"; };
+		DF4CFD771FE88E7D0015657E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF4CFD7A1FE88E7D0015657E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF4CFD7C1FE88E7D0015657E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF7E5AB61FF2EF790085FA17 /* Vertrina.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertrina.swift; sourceTree = "<group>"; };
+		DF7E5AB71FF2EF7A0085FA17 /* Vertrina_CB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vertrina_CB.ttf; sourceTree = "<group>"; };
+		DF7E5ABA1FF2F8B20085FA17 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		DF7E5ABC1FF30C480085FA17 /* DetalharEscolaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalharEscolaViewController.swift; sourceTree = "<group>"; };
+		DF7E5ABE1FF323B90085FA17 /* FATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FATextField.swift; sourceTree = "<group>"; };
+		DF7E5ABF1FF323BA0085FA17 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DF8C8B271FE9DCB800621BA3 /* CustomizacaoAPP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizacaoAPP.swift; sourceTree = "<group>"; };
+		DF8C8B291FE9E5C500621BA3 /* EscolasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolasTableViewController.swift; sourceTree = "<group>"; };
+		DF8C8B2C1FE9EAC500621BA3 /* JsonPlaceHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceHolderModel.swift; sourceTree = "<group>"; };
+		DFAA29161FEF086E00A0FEC3 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DFAA29181FEF08DC00A0FEC3 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		DFAA291B1FEF0BD300A0FEC3 /* Alertas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertas.swift; sourceTree = "<group>"; };
+		DFAA291D1FEF0C1C00A0FEC3 /* CoreDataErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataErrors.swift; sourceTree = "<group>"; };
+		DFAA29201FEF1EF900A0FEC3 /* ProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressView.xib; sourceTree = "<group>"; };
+		DFAA29211FEF1EF900A0FEC3 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		DFAADF4E2006D7B000F74909 /* LocalizacaoDispositivoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizacaoDispositivoService.swift; sourceTree = "<group>"; };
+		DFAADF512006D7EE00F74909 /* EscolaNuvemTcuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolaNuvemTcuService.swift; sourceTree = "<group>"; };
+		DFAADF532006D80B00F74909 /* EscolaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolaService.swift; sourceTree = "<group>"; };
+		DFAADF552006D85600F74909 /* LocalizacaoDispotivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizacaoDispotivo.swift; sourceTree = "<group>"; };
+		DFAADF572006D87700F74909 /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
+		DFAADF592006D89000F74909 /* Municipio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Municipio.swift; sourceTree = "<group>"; };
+		DFAADF5B2006D8AA00F74909 /* Geolocalizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geolocalizacao.swift; sourceTree = "<group>"; };
+		DFAADF5D2006D8C500F74909 /* Escola.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Escola.swift; sourceTree = "<group>"; };
+		DFB17B6E1FF9A41D0061E03B /* EscolaMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolaMapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF4CFD671FE88E7C0015657E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF4CFD611FE88E7C0015657E = {
+			isa = PBXGroup;
+			children = (
+				DF4CFD6C1FE88E7D0015657E /* E-Escola */,
+				DF4CFD6B1FE88E7D0015657E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF4CFD6B1FE88E7D0015657E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF4CFD6A1FE88E7D0015657E /* E-Escola.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF4CFD6C1FE88E7D0015657E /* E-Escola */ = {
+			isa = PBXGroup;
+			children = (
+				DFAADF502006D7BF00F74909 /* Service */,
+				DFAA291F1FEF1EC000A0FEC3 /* Views */,
+				DF4CFD841FE892360015657E /* Extensions */,
+				DF8C8B2B1FE9EAA200621BA3 /* APIModel */,
+				DF4CFD831FE891CD0015657E /* CoreData */,
+				DF4CFD851FE892810015657E /* ViewControllers */,
+				DF4CFD711FE88E7D0015657E /* Main.storyboard */,
+				DF4CFD821FE891800015657E /* Supporting Files */,
+				DF4CFD7C1FE88E7D0015657E /* Info.plist */,
+			);
+			path = "E-Escola";
+			sourceTree = "<group>";
+		};
+		DF4CFD821FE891800015657E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E5AB71FF2EF7A0085FA17 /* Vertrina_CB.ttf */,
+				DF7E5AB61FF2EF790085FA17 /* Vertrina.swift */,
+				DFAA29181FEF08DC00A0FEC3 /* Reachability.swift */,
+				DF4CFD6D1FE88E7D0015657E /* AppDelegate.swift */,
+				DF4CFD771FE88E7D0015657E /* Assets.xcassets */,
+				DF4CFD791FE88E7D0015657E /* LaunchScreen.storyboard */,
+				DF8C8B271FE9DCB800621BA3 /* CustomizacaoAPP.swift */,
+				DFAA29161FEF086E00A0FEC3 /* API.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF4CFD831FE891CD0015657E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DFAA291A1FEF0BBF00A0FEC3 /* Errors */,
+				DF4CFD741FE88E7D0015657E /* E_Escola.xcdatamodeld */,
+				DFAADF552006D85600F74909 /* LocalizacaoDispotivo.swift */,
+				DFAADF572006D87700F74909 /* Endereco.swift */,
+				DFAADF592006D89000F74909 /* Municipio.swift */,
+				DFAADF5B2006D8AA00F74909 /* Geolocalizacao.swift */,
+				DFAADF5D2006D8C500F74909 /* Escola.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DF4CFD841FE892360015657E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DFAA291B1FEF0BD300A0FEC3 /* Alertas.swift */,
+				DF7E5ABA1FF2F8B20085FA17 /* Color.swift */,
+				DF1AA9F71FFC497B005B9796 /* Notificacao.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF4CFD851FE892810015657E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C8B291FE9E5C500621BA3 /* EscolasTableViewController.swift */,
+				DF7E5ABC1FF30C480085FA17 /* DetalharEscolaViewController.swift */,
+				DFB17B6E1FF9A41D0061E03B /* EscolaMapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DF8C8B2B1FE9EAA200621BA3 /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF8C8B2C1FE9EAC500621BA3 /* JsonPlaceHolderModel.swift */,
+			);
+			path = APIModel;
+			sourceTree = "<group>";
+		};
+		DFAA291A1FEF0BBF00A0FEC3 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				DFAA291D1FEF0C1C00A0FEC3 /* CoreDataErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		DFAA291F1FEF1EC000A0FEC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E5ABF1FF323BA0085FA17 /* CardView.swift */,
+				DF7E5ABE1FF323B90085FA17 /* FATextField.swift */,
+				DFAA29211FEF1EF900A0FEC3 /* ProgressView.swift */,
+				DFAA29201FEF1EF900A0FEC3 /* ProgressView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DFAADF502006D7BF00F74909 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DFAADF4E2006D7B000F74909 /* LocalizacaoDispositivoService.swift */,
+				DFAADF512006D7EE00F74909 /* EscolaNuvemTcuService.swift */,
+				DFAADF532006D80B00F74909 /* EscolaService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF4CFD691FE88E7C0015657E /* E-Escola */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF4CFD7F1FE88E7D0015657E /* Build configuration list for PBXNativeTarget "E-Escola" */;
+			buildPhases = (
+				DF4CFD661FE88E7C0015657E /* Sources */,
+				DF4CFD671FE88E7C0015657E /* Frameworks */,
+				DF4CFD681FE88E7C0015657E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "E-Escola";
+			productName = "E-Escola";
+			productReference = DF4CFD6A1FE88E7D0015657E /* E-Escola.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF4CFD621FE88E7C0015657E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Fábio Sales";
+				TargetAttributes = {
+					DF4CFD691FE88E7C0015657E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DF4CFD651FE88E7C0015657E /* Build configuration list for PBXProject "E-Escola" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF4CFD611FE88E7C0015657E;
+			productRefGroup = DF4CFD6B1FE88E7D0015657E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF4CFD691FE88E7C0015657E /* E-Escola */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF4CFD681FE88E7C0015657E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4CFD7B1FE88E7D0015657E /* LaunchScreen.storyboard in Resources */,
+				DF7E5AB91FF2EF7A0085FA17 /* Vertrina_CB.ttf in Resources */,
+				DFAA29221FEF1EF900A0FEC3 /* ProgressView.xib in Resources */,
+				DF4CFD781FE88E7D0015657E /* Assets.xcassets in Resources */,
+				DF4CFD731FE88E7D0015657E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF4CFD661FE88E7C0015657E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4CFD761FE88E7D0015657E /* E_Escola.xcdatamodeld in Sources */,
+				DF7E5AC01FF323BA0085FA17 /* FATextField.swift in Sources */,
+				DF1AA9F81FFC497B005B9796 /* Notificacao.swift in Sources */,
+				DF7E5AB81FF2EF7A0085FA17 /* Vertrina.swift in Sources */,
+				DFAADF4F2006D7B000F74909 /* LocalizacaoDispositivoService.swift in Sources */,
+				DFAADF582006D87700F74909 /* Endereco.swift in Sources */,
+				DF4CFD6E1FE88E7D0015657E /* AppDelegate.swift in Sources */,
+				DFB17B6F1FF9A41D0061E03B /* EscolaMapViewController.swift in Sources */,
+				DF8C8B2D1FE9EAC500621BA3 /* JsonPlaceHolderModel.swift in Sources */,
+				DF7E5ABB1FF2F8B20085FA17 /* Color.swift in Sources */,
+				DF7E5AC11FF323BA0085FA17 /* CardView.swift in Sources */,
+				DFAADF5C2006D8AA00F74909 /* Geolocalizacao.swift in Sources */,
+				DFAADF5E2006D8C500F74909 /* Escola.swift in Sources */,
+				DF7E5ABD1FF30C480085FA17 /* DetalharEscolaViewController.swift in Sources */,
+				DF8C8B281FE9DCB800621BA3 /* CustomizacaoAPP.swift in Sources */,
+				DFAADF522006D7EE00F74909 /* EscolaNuvemTcuService.swift in Sources */,
+				DFAA291E1FEF0C1C00A0FEC3 /* CoreDataErrors.swift in Sources */,
+				DFAA291C1FEF0BD300A0FEC3 /* Alertas.swift in Sources */,
+				DF8C8B2A1FE9E5C500621BA3 /* EscolasTableViewController.swift in Sources */,
+				DFAADF562006D85600F74909 /* LocalizacaoDispotivo.swift in Sources */,
+				DFAADF542006D80B00F74909 /* EscolaService.swift in Sources */,
+				DFAA29231FEF1EF900A0FEC3 /* ProgressView.swift in Sources */,
+				DFAA29191FEF08DC00A0FEC3 /* Reachability.swift in Sources */,
+				DFAADF5A2006D89000F74909 /* Municipio.swift in Sources */,
+				DFAA29171FEF086E00A0FEC3 /* API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF4CFD711FE88E7D0015657E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF4CFD721FE88E7D0015657E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF4CFD791FE88E7D0015657E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF4CFD7A1FE88E7D0015657E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF4CFD7D1FE88E7D0015657E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF4CFD7E1FE88E7D0015657E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF4CFD801FE88E7D0015657E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBZ22DJ34Q;
+				INFOPLIST_FILE = "E-Escola/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.pos.fosales.E-Escola";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DF4CFD811FE88E7D0015657E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBZ22DJ34Q;
+				INFOPLIST_FILE = "E-Escola/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.pos.fosales.E-Escola";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF4CFD651FE88E7C0015657E /* Build configuration list for PBXProject "E-Escola" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF4CFD7D1FE88E7D0015657E /* Debug */,
+				DF4CFD7E1FE88E7D0015657E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF4CFD7F1FE88E7D0015657E /* Build configuration list for PBXNativeTarget "E-Escola" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF4CFD801FE88E7D0015657E /* Debug */,
+				DF4CFD811FE88E7D0015657E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF4CFD741FE88E7D0015657E /* E_Escola.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF4CFD751FE88E7D0015657E /* E_Escola.xcdatamodel */,
+			);
+			currentVersion = DF4CFD751FE88E7D0015657E /* E_Escola.xcdatamodel */;
+			path = E_Escola.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DF4CFD621FE88E7C0015657E /* Project object */;
+}

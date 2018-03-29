@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Endereco" representedClassName=".Endereco" syncable="YES" codeGenerationType="category">
+        <attribute name="bairro" attributeType="String" syncable="YES"/>
+        <attribute name="cep" attributeType="String" syncable="YES"/>
+        <attribute name="codigo" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="descricao" attributeType="String" syncable="YES"/>
+        <relationship name="escola" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Escola" inverseName="endereco" inverseEntity="Escola" syncable="YES"/>
+        <relationship name="municipio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Municipio" inverseName="enderecos" inverseEntity="Municipio" syncable="YES"/>
+    </entity>
+    <entity name="Escola" representedClassName=".Escola" syncable="YES" codeGenerationType="category">
+        <attribute name="codigo" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="esfera" attributeType="String" syncable="YES"/>
+        <attribute name="nome" attributeType="String" syncable="YES"/>
+        <attribute name="rede" attributeType="String" syncable="YES"/>
+        <relationship name="endereco" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Endereco" inverseName="escola" inverseEntity="Endereco" syncable="YES"/>
+        <relationship name="geo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Geolocalizacao" inverseName="escola" inverseEntity="Geolocalizacao" syncable="YES"/>
+        <relationship name="localizacoesDispositivo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LocalizacaoDispotivo" inverseName="escolas" inverseEntity="LocalizacaoDispotivo" syncable="YES"/>
+    </entity>
+    <entity name="Geolocalizacao" representedClassName=".Geolocalizacao" syncable="YES" codeGenerationType="category">
+        <attribute name="codigo" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="escola" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Escola" inverseName="geo" inverseEntity="Escola" syncable="YES"/>
+    </entity>
+    <entity name="LocalizacaoDispotivo" representedClassName=".LocalizacaoDispotivo" syncable="YES" codeGenerationType="category">
+        <attribute name="codigo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="escolas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Escola" inverseName="localizacoesDispositivo" inverseEntity="Escola" syncable="YES"/>
+    </entity>
+    <entity name="Municipio" representedClassName=".Municipio" syncable="YES" codeGenerationType="category">
+        <attribute name="codigo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" attributeType="String" syncable="YES"/>
+        <attribute name="uf" attributeType="String" syncable="YES"/>
+        <relationship name="enderecos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Endereco" inverseName="municipio" inverseEntity="Endereco" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Endereco" positionX="-36" positionY="54" width="128" height="135"/>
+        <element name="Escola" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Geolocalizacao" positionX="-54" positionY="27" width="128" height="105"/>
+        <element name="Municipio" positionX="-27" positionY="63" width="128" height="105"/>
+        <element name="LocalizacaoDispotivo" positionX="-45" positionY="72" width="128" height="105"/>
+    </elements>
+</model>
